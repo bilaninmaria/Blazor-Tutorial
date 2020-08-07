@@ -1,0 +1,17 @@
+﻿@page
+@model LogoutModel
+@{
+    ViewData["Title"] = "Log out";
+}
+
+<header>
+    <h1>@ViewData["Title"]</h1>
+    <p>You have successfully logged out of the application.</p>
+</header>
+
+<!--Self executing anonymous funtion, a Js scrips that runs as soon as it is defined-->
+<script>
+    (() => {
+        document.getElementById('logoutForm').submit();
+    })()
+</script>
